@@ -42,8 +42,16 @@
 - 其他课程资料  
 > Spring 官方学习文档：https://spring.io/projects/spring-framework#learn    
 > MOOC（spring）：https://www.imooc.com/learn/196     
-> MOOC（tomcat）：https://www.imooc.com/learn/1114    
-
+> MOOC（tomcat）：https://www.imooc.com/learn/1114     
+> Java 反射 https://www.imooc.com/learn/199     
+> Java集合框架（4、5、6章） https://www.imooc.com/learn/110     
+> Java多线程 https://www.imooc.com/learn/202     
+> Java Synchronized与高并发 https://www.imooc.com/learn/1086     
+> Java注解(Annotation） https://www.imooc.com/learn/456     
+> Java从编程语言到编程思想 https://www.imooc.com/learn/1154     
+> Maven使用 https://www.imooc.com/learn/443     
+> IntelliJ IDEA使用技巧 https://www.imooc.com/learn/924     
+    
 ##### 课程分数构成
 课程总成绩=平时和实验成绩50%+大作业50％ 
 - 平时成绩（10%）：作业上交情况；上课到课情况；对课堂的贡献程度； 
