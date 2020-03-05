@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class UserEventQue {
     private static int SEQ = 0;
+
     //队列
     private List<UserEvent> events = new ArrayList<UserEvent>();
 
@@ -52,7 +53,6 @@ public class UserEventQue {
             synchronized (UserEventQue.class){
                 UserEvent event = selector.select(events);
                 //TODO 移除队列中选中的event
-
                 return event;
             }
         }
