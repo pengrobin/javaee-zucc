@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pb-ioc>
+    <controller id="login" clazz="cn.edu.zucc.pb.ioc.controller.LoginController" ref="dbLogin"/>
+
+    <service id="fixedLogin" clazz="cn.edu.zucc.pb.ioc.service.FixedLoginService" />
+    <service id="dbLogin" clazz="cn.edu.zucc.pb.ioc.service.DBLoginService" />
+</pb-ioc>
