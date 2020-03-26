@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pb-ioc>
+    <controller id="login" path="/login" clazz="cn.edu.zucc.pb.ioc.controller.LoginController">
+        <service name="loginService" ref="fixedLogin"/>
+    </controller>
+
+    <controller id="register" path="/register" clazz="cn.edu.zucc.pb.ioc.controller.Register">
+        <service name="regService" ref="registerService"/>
+    </controller>
+
+    <service id="fixedLogin" clazz="cn.edu.zucc.pb.ioc.service.FixedLoginService" />
+    <service id="dbLogin" clazz="cn.edu.zucc.pb.ioc.service.DBLoginService" />
+    <service id="registerService" clazz="cn.edu.zucc.pb.ioc.service.RegisterService" />
+</pb-ioc>
