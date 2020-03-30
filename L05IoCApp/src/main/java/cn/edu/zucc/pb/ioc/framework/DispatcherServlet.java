@@ -33,7 +33,9 @@ public class DispatcherServlet extends HttpServlet {
                 ServiceNode serviceNode = context.getIocMapping().findService(controllerNode.getRef());
                 Object service = Class.forName(serviceNode.getClazz()).newInstance();
                 //TODO 改造这种固定了ILogin服务参数的做法，支持使用set方法绑定具体的服务类
-                Object ret = controller.getClass().getMethod("doPost", ILogin.class, HttpServletRequest.class, HttpServletResponse.class).invoke(controller, service, request, response);
+                Object ret = controller.getClass()
+                        .getMethod("doPost", ILogin.class, HttpServletRequest.class, HttpServletResponse.class)
+                        .invoke(controller, service, request, response);
 
                 response.setStatus(HttpServletResponse.SC_OK);
                 response.setContentType("text/plain");
