@@ -15,7 +15,8 @@ import java.util.Date;
 @Entity
 @Table(name = "qa_question")
 public class QuestionEntity {
-    private @Id
+    private
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int sid;
 
