@@ -1,9 +1,6 @@
 package cn.edu.zucc.pb.ja;
 
-import java.util.ArrayList;
-import java.util.IntSummaryStatistics;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -25,6 +22,7 @@ public class StreamDemo {
         listValue.stream().filter(item->item < 50)
                 .sorted()
                 .forEach(item->System.out.print(item.toString() + ","));
+
         System.out.println();
         //找出所有小于50的数，并且求平方后,然后构造为字符串后输出
         System.out.println(
@@ -41,5 +39,37 @@ public class StreamDemo {
         System.out.println("列表中最小的数 : " + stats.getMin());
         System.out.println("所有数之和 : " + stats.getSum());
         System.out.println("平均数 : " + stats.getAverage());
+    }
+
+    public void test(){
+        //生成100个500以内的随机数
+        List<Integer> listValue = new ArrayList<>();
+        Random random = new Random();
+        for(int i=0; i < 100; i++){
+            listValue.add(random.nextInt(500));
+        }
+
+
+        Collections.sort(listValue);
+        for(int i = 0; i < listValue.size(); i++){
+            if(listValue.get(i) < 50){
+                System.out.println();
+            } else {
+                break;
+            }
+        }
+
+        List<Integer> resultList = new ArrayList<>();
+        for(int i = 0; i < listValue.size(); i++){
+            if(listValue.get(i) < 50){
+                resultList.add(listValue.get(i));
+            }
+        }
+
+        Collections.sort(resultList);
+        for(int i = 0; i < resultList.size(); i++){
+            System.out.println(resultList.get(i));
+        }
+
     }
 }
